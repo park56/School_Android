@@ -1,0 +1,50 @@
+cd C:\Users\edu\AppData\Local\Android\Sdk\platform-tools
+
+
+adb disconnect
+
+
+adb kill-server
+
+//================================================
+
+adb kill-server
+
+
+adb pair 192.168.0.63:37011
+Enter pairing code: 548819
+
+
+adb connect 192.168.0.63:46395
+
+
+adb devices
+192.168.0.63:46395      device
+
+
+adb root
+
+
+adb shell
+
+
+//==============================================
+// apk install
+adb install helloWorld.apk 
+
+
+//==============================================
+// file upload/download
+
+
+adb push haha.png /sdcard
+
+
+adb pull /sdcard/haha.png
+
+
+
+
+
+
+
